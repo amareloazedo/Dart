@@ -1,0 +1,58 @@
+void main() {
+  // Exercício 1 - Verificar se um número é positivo, negativo ou zero.
+
+  int n = 1;
+
+  if (n >= 1) {
+    print('O valor $n é positivo.');
+  } else if (n <= -1) {
+    print('O valor $n é negativo.');
+  } else {
+    print('O valor $n é nulo.');
+  }
+
+  // Exercício 2 - Verificar se um número é par ou ímpar
+
+  int n2 = 2;
+
+  if (n2 % 2 == 0) {
+    print('O valor $n2 é par.');
+  } else {
+    print('O valor $n2 é ímpar.');
+  }
+
+  // Exercício 3 - Verificar se um ano é bissexto
+
+  int ano = 2024;
+
+  if (ano % 4 == 0 || ano % 100 != 0 && ano % 400 == 0) {
+    print('O ano $ano é bissexto.');
+  } else {
+    print('O ano $ano não é bissexto.');
+  }
+
+  // Exercício 4 - Calcular o desconto do salário de um funcionário
+
+  double sal = 1000.01;
+  double? desc, total;
+
+  if (sal >= 1000.01 && sal <= 2000.00) {
+    desc = sal * 0.10;
+    total = sal - (sal * 0.10);
+    print(
+        'O salario do empregado terá um desconto de 10% (desconto de RS$desc), totalizando um valor de RS$total.');
+  } else if (sal > 2000) {
+    desc = sal * 0.15;
+    total = sal - (sal * 0.15);
+    print(
+        'O salario do empregado terá um desconto de 15% (desconto de RS$desc), totalizando um valor de RS$total.');
+  } else {
+    desc = sal * 0.05;
+    total = sal - (sal * 0.05);
+    print(
+        'O salario do empregado terá um desconto de 5% (desconto de RS$desc), totalizando um valor de RS$total.');
+  }
+  
+  //  Exercício 5 - Verificar o tipo de operação.
+  
+}
