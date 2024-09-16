@@ -1,0 +1,29 @@
+void main() {
+//   criando um objeto
+  Pessoa pessoaObjeto = Pessoa();
+  pessoaObjeto.nome = 'David';
+  pessoaObjeto.idade = 47;
+  
+  print(pessoaObjeto.nome);
+  print(pessoaObjeto.idade);
+  
+  pessoaObjeto.aniversario();
+  
+  pessoaObjeto.novoNome('Magno');
+}
+
+// criando uma classe para o objeto
+class Pessoa {
+  String? nome;
+  int? idade;
+  
+  void aniversario() {
+    idade = idade! + 1; 
+    print('Parabéns, $nome!! Você agora tem $idade de idade!!');
+  }
+  
+  void novoNome(String n) { 
+    nome = n;
+    print('Seu novo nome será: $nome!');
+  }
+}
